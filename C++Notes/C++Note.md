@@ -30,8 +30,7 @@
 ### [Exceptions](#exceptions)
 * [Exception Class](#exception_class)
 
-### Class
-* [Class](#classs)
+### [Class](#class)
 * [Class Arrays](#class_array)
 * [Class Vector](#class_vector)
 * [Constructor](#constructor)
@@ -779,15 +778,19 @@ Every node contains address of the next node and last node contains address to n
 
 </a>
 
-### ------------------------------------------------------------
 
-# Class
+<a name="classs"></a>
 
-### ------------------------------------------------------------
-
-<a name="classs">
 ## Classes
 [ [ Top ] ](#top)
+
+* [Class Arrays](#class_array)
+* [Class Vector](#class_vector)
+* [Constructor](#constructor)
+* [Destructor](#destructor)
+* [Member function](#member_function) [(this)](#self-reference)
+
+
 * Data that an object represents
    * Data members or fields   
    * Each object has its own data members  
