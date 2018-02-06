@@ -378,7 +378,7 @@ A function throws an exception when it detects a problem by using the *throw* ke
 
 	throw [obj];
 
-e-can throw anything
+-can throw anything
 
 -can have multiple catch blocks for different types of errors
 
@@ -386,11 +386,13 @@ e-can throw anything
 #### try
 
 A *try* block identifies a block of code for which particular exceptions may be thrown.
+*try* block ends if an exception occurs
 It is followed by one or more *catch blocks*
 
 #### catch
 
-Exception handlers are declared with the keyword *catch*. It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.
+Exception handlers are declared with the keyword *catch*. 
+It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.
 
 ##### Example
 
@@ -420,11 +422,16 @@ std::bad_cast | This can be thrown by dynamic_cast.
 std::bad_exception | This is useful device to handle unexpected exceptions in a C++ program
 std::bad_typeid | This can be thrown by typeid.
 std::logic_error | An exception that theoretically can be detected by reading the code.
+std::domain_error | This is an exception thrown when a mathematically invalid domain is used
+std::invalid_argument | This is thrown due to invalid arguments.
+std::length_error | This is thrown when a too big std::string is created
+std::out_of_range | This can be thrown by the at method from, for example, a std::vector or std::bitset<>::operator[]().
+std::runtime_error | An exception that theoretically cannot be detected by reading the code.
+std::overflow_error | This is thrown if a mathematical overflow occurs.
+std::range_error | This is occured when you try to store a value which is out of range.
+std::underflow_error | This is thrown if a mathematical underflow occurs
 
 
-
-
-* *try* block ends if an exception occurs
 * May have multiple *catch* blocks
 	* Tries to match thrown type against *catch* blocks until it finds a match
 * *catch* (...) matches every exception
