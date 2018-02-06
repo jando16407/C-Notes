@@ -391,18 +391,76 @@ All must have different parameter set and must give the definition of each funct
 # Templates
 [ [ Top ] ](#top)</a>
 
-* [Function template]
-* [Class template]
+* [Function template](#function_template)
+* [Class template](#class_template)
+
+###### Syntax
+
+	template <class Type>
+	declaration;
+
 
 <a name="function_template">
 
 ### Function template
 [ [ Top ] ](#top) [ [ Templates ] ](#templates)</a>
 
+Writing a single code segment for a set of related functions.
+
+###### Syntax
+
+	template <class Type>
+	function definition;
+
+###### Example
+
+	template <class Type>
+	Type larger(Type x, Type y){
+		if (x >= y)
+			return x;
+		else 
+			return y;
+	}
+
+When the compiler deteects a call to *larger*, it will   
+-determines tthe type of the arguments  
+-generates a function larger with Type replaced with that type  
+_calls the generated function with the given arguments  
+
+
 <a name="class_template">
 
 ### Class template
 [ [ Top ] ](#top) [ [ Templates ] ](#templates)</a>
+
+Writing a single code segment for a set of related classes.   
+This will generate specific class based on parameter type
+
+###### Syntax  
+
+	template <class Type>
+	class declaration
+
+###### Example
+
+	template <class elemType>
+	calss listType{
+	public:
+		bool isEmpty();
+		bool isFull();
+		void search(const elemType& searchItem, bool& found);
+		void insert(const elemType& newElement);
+		void remove(const elemType& removeElement);
+		void desroyList();
+		void printList();
+
+		listType;
+
+	private:
+		elemType list[100];	//array to hold the list elemetns
+		int length;		    //variable to store the number
+	};					    of elemetns in the list
+
 
 
 <a name="exceptions">
