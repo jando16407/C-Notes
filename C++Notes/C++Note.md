@@ -27,8 +27,7 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### Exceptions
-* [Exception](#except)
+### [Exception](#except)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
 
@@ -362,6 +361,7 @@ Two types
 
 
 * [Exception Class](#exception-class)
+* [Custom Exceptions](#custom_exceptions)
 
 
 
