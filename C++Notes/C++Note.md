@@ -779,9 +779,9 @@ Every node contains address of the next node and last node contains address to n
 </a>
 
 
-<a name="classs"></a>
+<a name="class">
 
-## Classes
+## Classes(#class)
 [ [ Top ] ](#top)
 
 * [Class Arrays](#class_array)
