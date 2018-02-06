@@ -27,8 +27,9 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### [Exceptions](#exceptions)
+### [Exceptions](#)
 * [Exception Class](#exception-class)
+* [Custom Exceptions](#)
 
 ### [Class](#class)
 * [Class Arrays](#class_array)
@@ -357,7 +358,7 @@ Two types
 
 # Exceptions
 [ [ Top ] ](#top)
-</a>
+
 
 * [Exception Class](#exception-class)
 
@@ -448,10 +449,10 @@ std::underflow_error | This is thrown if a mathematical underflow occurs
       }
     }
 
-Output  
-
+###### Output  
 	An exception occured. Exception Nr. 20
 
+</a>
 
 <a name="exception-class">
 
@@ -464,6 +465,17 @@ The *exception* class
 	<exeption>
 
 -Constructed with *const char** or *string*
+
+</a>
+
+<a name="custom_exceptions">
+
+### Custom Exceptions
+[ [ Top ] ](#top)
+
+You can define your own exceptions by inheriting and overriding *exception* class functionality.
+
+######
 
 </a>
 
