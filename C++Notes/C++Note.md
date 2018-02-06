@@ -378,20 +378,19 @@ A function throws an exception when it detects a problem by using the *throw* ke
 
 	throw [obj];
 
--can throw anything
-
+-can throw anything  
 -can have multiple catch blocks for different types of errors
 
 
 #### try
 
 A *try* block identifies a block of code for which particular exceptions may be thrown.  
-*try* block ends if an exception occurs. 
-It is followed by one or more *catch blocks*. 
+*try* block ends if an exception occurs.  
+It is followed by one or more *catch blocks*.  
 
 #### catch
 
-Exception handlers are declared with the keyword *catch*. 
+Exception handlers are declared with the keyword *catch*.  
 It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.
 
 ##### Example
