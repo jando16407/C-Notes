@@ -27,7 +27,7 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### [Exceptions](#exceptions)
+### [Exceptions]()
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
 
@@ -357,7 +357,7 @@ Two types
 <a name="exceptions">
 
 # Exceptions
-[ [ Top ] ](#top)
+[ [ Top ] ](#top)</a>
 
 
 * [Exception Class](#exception-class)
@@ -445,14 +445,14 @@ std::underflow_error | This is thrown if a mathematical underflow occurs
         throw 20;
 	  }
       catch (int e) {
-        cout << "An exception occured. Exception Nr. " << e << '\n';
+        cout << "An exception occured. Exception No. " << e << '\n';
       }
     }
 
 Output  
-		An exception occured. Exception Nr. 20
 
-</a>
+	An exception occured. Exception No. 20
+
 
 <a name="exception-class">
 
