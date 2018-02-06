@@ -385,9 +385,9 @@ A function throws an exception when it detects a problem by using the *throw* ke
 
 #### try
 
-A *try* block identifies a block of code for which particular exceptions may be thrown.
-*try* block ends if an exception occurs
-It is followed by one or more *catch blocks*
+A *try* block identifies a block of code for which particular exceptions may be thrown.  
+*try* block ends if an exception occurs. 
+It is followed by one or more *catch blocks*. 
 
 #### catch
 
