@@ -378,7 +378,7 @@ A function throws an exception when it detects a problem by using the *throw* ke
 
 	throw [obj];
 
--can throw anything
+e-can throw anything
 
 -can have multiple catch blocks for different types of errors
 
@@ -392,16 +392,37 @@ It is followed by one or more *catch blocks*
 
 Exception handlers are declared with the keyword *catch*. It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.
 
-##### Syntax
+##### Example
 
     try
     {
-         //Code that may throw an exception
+         //protected code where exception may occur
     }
-    catch ([exc_type] err) 
+    catch ( ExceptionName & e1 ) 
     {
-         //Code for handling exception of type exc_type
+         //catch block fro exception e1
     }
+     ...
+    catch ( ExceptionName & eN )
+    {
+    	//catch block for Nth exception
+    }
+
+Hierarchy of standard exceptions
+
+![hierarchy](./images/exception_image1.png)
+
+Exception | Description
+ --- | ---
+std::exception | Parent class of all the standard C++ exceptions.
+std::bad_alloc | This can be thrown by new.
+std::bad_cast | This can be thrown by dynamic_cast.
+std::bad_exception | This is useful device to handle unexpected exceptions in a C++ program
+std::bad_typeid | This can be thrown by typeid.
+std::logic_error | An exception that theoretically can be detected by reading the code.
+
+
+
 
 * *try* block ends if an exception occurs
 * May have multiple *catch* blocks
