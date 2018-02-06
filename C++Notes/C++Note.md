@@ -9,7 +9,6 @@
 ### Basic Concepts
 * [Binary earch](#binary_Search)
 * [Object Oriented Programming](#object_oriented_programming)
-* [Operator Overloading](#operator_overloading)
 * [Programm Organization](#program_organization)
 * [Recursion](#recursion)
 * [Software Testing](#software_testing)
@@ -26,6 +25,10 @@
 * [Using](#using)
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
+
+### [Overloading](#overloading)
+* [Operator Overloading](#operator_overloading)
+* [Function Overloading](#function_overloading)
 
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
@@ -181,30 +184,6 @@ Code Example
 
 </a>
 
-### ------------------------------------------------------------
-
-<a name="operator_overloading">
-
-# Operator Overloading
-[ [ Top ] ](#top)
-
-Way to define function named by operators
-
-	str += " world" IS SAME AS str.operator+=(" world")
-
-Two ways to use
-* Define operator as member function
-	-Object must always be on LHS
-    	Complex c2 = c + 1.0 is LEGAL(c.operator+(1.0))
-        Complex c2 = 1.0 + c is NOT
-
-* Define separate function
-		Complex operator+ )double, Complex&)
-        Complex::operator+ (double)
-
-</a>
-
-### ------------------------------------------------------------
 
 <a name="program_organization">
 
@@ -350,9 +329,40 @@ Two types
     unique_ptr<int> varname(new int); unique_ptr<char[]> varname(new char[10]); shared_ptr<double[]> ptr(new double[10]);
 
 * Use *type[]* if storing an array
-* *, [] (if array type), NO POINTER ARITHMETIC
+* *, [](if array type), NO POINTER ARITHMETIC
 
 </a>
+
+<a name="overloading">
+
+# Overloading
+[ [ Top ] ](#top)</a>
+
+* [Operator Overloading](#operator_overloading)
+* [Function Overloading](#function_overloading)
+
+<a name="operator_overloading">
+
+# Operator Overloading
+[ [ Top ] ](#top)[ [ Overeloading ] ](#overloading)</a>
+
+Way to define function named by operators
+
+	str += " world" IS SAME AS str.operator+=(" world")
+
+Two ways to use
+* Define operator as member function
+	-Object must always be on LHS
+    	Complex c2 = c + 1.0 is LEGAL(c.operator+(1.0))
+        Complex c2 = 1.0 + c is NOT
+
+* Define separate function
+		Complex operator+ )double, Complex&)
+        Complex::operator+ (double)
+
+<a name="function_overloading">
+### Function Overloading
+[ [ Top ] ](#top) [ [ Overloading ]](#overloading)</a>
 
 <a name="exceptions">
 
@@ -542,6 +552,8 @@ This returns a message descriving the exception.
 			return errorMsg;
 		}
 	};
+
+This is useful because an error message can be given when a fixed message is not appropriate.   
 
 </a>
 
