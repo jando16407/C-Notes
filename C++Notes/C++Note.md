@@ -26,7 +26,7 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### [Overloading](#overloading)
+### [Overloading]
 * [Operator Overloading](#operator_overloading)
 * [Function Overloading](#function_overloading)
 
@@ -361,6 +361,7 @@ Two ways to use
         Complex::operator+ (double)
 
 <a name="function_overloading">
+
 ### Function Overloading
 [ [ Top ] ](#top) [ [ Overloading ]](#overloading)</a>
 
