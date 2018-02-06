@@ -414,8 +414,6 @@ Exception handlers are declared with the keyword *catch*, which must be placed i
 
 </a>
 
-### ------------------------------------------------------------
-
 <a name="exception-class">
 
 ## Exception Class
@@ -429,8 +427,6 @@ The *exception* class
 -Constructed with *const char** or *string*
 
 </a>
-
-### ------------------------------------------------------------
 
 <a name="namespace">
 
