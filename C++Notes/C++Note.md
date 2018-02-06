@@ -353,7 +353,7 @@ Two types
 
 </a>
 
-<a name = "exceptions">
+
 
 # Exceptions
 [ [ Top ] ](#top)
@@ -372,7 +372,8 @@ Exceptions provide a way to react to exceptional circumstances (eg. runtime erro
 
 #### throw
 
-A function throws an exception when it detects a problem by using the *throw* keyword from inside the *try* block.
+A function throws an exception when it detects a problem by using the *throw* keyword from inside the *try* block.  
+It will tri to match thrown type against *catch* blocks until it finds a match
 
 ##### Syntax
 
@@ -391,7 +392,10 @@ It is followed by one or more *catch blocks*.
 #### catch
 
 Exception handlers are declared with the keyword *catch*.  
-It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.
+It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.  
+*catch* (...) matches every exception.  
+May have multiple *catch* blocks.  
+Inside *catch*: *throw*; (no object) "rethrows" exception.  
 
 ##### Example
 
@@ -430,25 +434,16 @@ std::overflow_error | This is thrown if a mathematical overflow occurs.
 std::range_error | This is occured when you try to store a value which is out of range.
 std::underflow_error | This is thrown if a mathematical underflow occurs
 
-
-* May have multiple *catch* blocks
-	* Tries to match thrown type against *catch* blocks until it finds a match
-* *catch* (...) matches every exception
-* Inside *catch*: *throw*; (no object) "rethrows" exception
-
 ###### Example
 
 	#include <iostream>
     using namespace std;
     
-    int main()
-    {
-      try
-      {
+    int main() {
+      try {
         throw 20;
 	  }
-      catch (int e)
-      {
+      catch (int e) {
         cout << "An exception occured. Exception Nr. " << e << '\n';
       }
     }
