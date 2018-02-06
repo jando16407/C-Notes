@@ -37,6 +37,8 @@
 * [Class template](#class_template)
 * [STL(Standar Template Library)](#stl)
 
+### [Iterators](#iterators)
+
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
@@ -558,7 +560,7 @@ Assignment
 Swapping
 
 	v1.swap(v2)
-![Vector swap](.images/STL_vector2.png)
+![Vector swap](./images/STL_vector2.png)
 
 	==
 implies elemet by element equality
@@ -586,6 +588,19 @@ Expression | Description
  vecList.resize(num, elem) | Changes the number of elements to *num*. If *size()* increases, the new elements are copies of *elem*.
 
 
+<a name="iterators">
+
+# Iterators
+[ [ Top ] ](#top)</a>
+
+An iterator. abstracts the process of scanning through a collection of elements.  
+A container is an abstract data structure that supports element access through iterators.  
+-begin(): returns an iterator to the fist elements  
+-end(): return an iterator to an imaginary position just after the last element  
+An iterator behaves liek a pointer to an element  
+-p*: returns the element referenced by this iterator  
+-+++p: advances to the next element  
+Extends the concept of position by dding a traveral capability
 
 <a name="exceptions">
 
