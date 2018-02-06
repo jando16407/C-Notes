@@ -28,7 +28,7 @@
 * [Linked Lists](#linked_lists)
 
 ### [Exceptions](#exceptions)
-* [Exception Class](#exception_class)
+* [Exception Class](#exception-class)
 
 ### [Class](#class)
 * [Class Arrays](#class_array)
@@ -358,7 +358,7 @@ Two types
 ## Exceptions
 [ [ Top ] ](#top)
 
-* [Exception Class](#exception_class)
+* [Exception Class](#exception-class)
 
 
 
@@ -416,7 +416,7 @@ Exception handlers are declared with the keyword *catch*, which must be placed i
 
 ### ------------------------------------------------------------
 
-<a name="exception_class">
+<a name="exception-class">
 
 ## Exception Class
 [ [ Top ] ](#top)
