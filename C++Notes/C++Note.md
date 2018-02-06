@@ -363,17 +363,34 @@ Two types
 
 
 
-Exceptions provide a way to react to exceptional circumstances (like runtime errors) in programs by tansferring control to special functions called *handlers*
-##### Handlers has two type
+Exceptions provide a way to react to exceptional circumstances (eg. runtime error, attempt to divide by zero) in programs by tansferring control to special functions called *handlers*
+##### C++ exception handling is built upon three keywords
+
+* throw
 * try
 * catch
 
-An exception is thrown by using the *throw* keyword from inside the *try* block.
-Exception handlers are declared with the keyword *catch*, which must be placed immediately after the *try* block
+#### throw
+
+A function throws an exception when it detects a problem by using the *throw* keyword from inside the *try* block.
+
+##### Syntax
 
 	throw [obj];
+
 -can throw anything
+
 -can have multiple catch blocks for different types of errors
+
+
+#### try
+
+A *try* block identifies a block of code for which particular exceptions may be thrown.
+It is followed by one or more *catch blocks*
+
+#### catch
+
+Exception handlers are declared with the keyword *catch*. It must be placed immediately after the *try* block to catch the thrown exceptions and handle it.
 
 ##### Syntax
 
