@@ -27,7 +27,7 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### [Exceptions](#)
+### [Exceptions](#exceptions)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#)
 
@@ -449,7 +449,7 @@ std::underflow_error | This is thrown if a mathematical underflow occurs
       }
     }
 
-###### Output  
+Output  
 	An exception occured. Exception Nr. 20
 
 </a>
