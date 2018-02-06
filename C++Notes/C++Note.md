@@ -26,7 +26,7 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### [Overloading]
+### [Overloading](#overloading)
 * [Operator Overloading](#operator_overloading)
 * [Function Overloading](#function_overloading)
 
@@ -364,6 +364,25 @@ Two ways to use
 
 ### Function Overloading
 [ [ Top ] ](#top) [ [ Overloading ]](#overloading)</a>
+
+It creates several functions with the same name.  
+All must have different parameter set and must give the definition of each function.
+
+###### Example
+
+	//Original code
+	int largerInt(int x, int y);
+	cahr largerChar(char first, char second);
+	double largerDouble(double u, double v);
+	string largerString(string first, string second);
+
+	//Modified code using overloading
+	int larger(int x, int y);
+	cahr larger(char first, char second);
+	double larger(double u, double v);
+	string larger(string first, string second);
+
+
 
 <a name="exceptions">
 
