@@ -30,6 +30,10 @@
 * [Operator Overloading](#operator_overloading)
 * [Function Overloading](#function_overloading)
 
+### [Templates](#templates)
+* [Function template](#function_template)
+* [Class template](#class_template)
+
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
@@ -382,6 +386,23 @@ All must have different parameter set and must give the definition of each funct
 	double larger(double u, double v);
 	string larger(string first, string second);
 
+<a name="templates">
+
+# Templates
+[ [ Top ] ](#top)</a>
+
+* [Function template]
+* [Class template]
+
+<a name="function_template">
+
+### Function template
+[ [ Top ] ](#top) [ [ Templates ] ](#templates)</a>
+
+<a name="class_template">
+
+### Class template
+[ [ Top ] ](#top) [ [ Templates ] ](#templates)</a>
 
 
 <a name="exceptions">
