@@ -450,7 +450,7 @@ std::underflow_error | This is thrown if a mathematical underflow occurs
       }
     }
 
-Output  
+###### Output  
 
 	An exception occured. Exception No. 20
 
@@ -476,7 +476,72 @@ The *exception* class
 
 You can define your own exceptions by inheriting and overriding *exception* class functionality.
 
-######
+###### Example of using std::exception class to implement a custom exception
+
+	#include <iostream>
+	#include <exception>
+	using namespace std;
+
+	struct NonPositive : public exception {
+		const char * what () const throw () {
+			return "Integer must be positive";
+		}
+	};
+
+	int getPositiveInt() {
+		int i;
+		cin >> i;
+		if(i <= 0)
+			throw NonPositive;
+		reurn i;
+	}
+
+throw() indicated that no exceptions will be thrown in this function.  
+The exception is not caught inside the function.  
+It should be caught by the code that called the function.  
+
+###### Example 2
+
+	//file try_cach.cpp
+	#include >iostream>
+	#include <exception>
+	#include "NonPositive.h"
+
+	itn main() {
+		try {
+			int i = getPositiveInt();
+		} catch (NonPositive& e) {
+			std::cout << "Exception caught" << endl;
+			std::cout << e.what() << endl;
+		} catch (exception& e) {
+			//Other errors
+		}
+	}
+
+###### Output
+
+	$ g++ try_catch.cpp
+	$ a
+	-5
+	Exception caught
+	Integer must be positive
+
+*what()* is a public method provided by the parent exception class.  
+It has been overridden by the child exception class.  
+This returns a message descriving the exception.  
+
+###### Custom RuntimeException
+
+	#include <string>
+	class RuntimeException{
+	private:
+		std::string errorMsg;
+	public:
+		RuntimeException(const std::string& err) {errorMsg = err; }
+		std::string getMessage() const {
+			return errorMsg;
+		}
+	};
 
 </a>
 
