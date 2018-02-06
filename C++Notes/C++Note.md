@@ -35,6 +35,7 @@
 ### [Templates](#templates)
 * [Function template](#function_template)
 * [Class template](#class_template)
+* [STL(Standar Template Library)](#stl)
 
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
@@ -483,12 +484,12 @@ This will generate specific class based on parameter type
 
 <a name="stl">
 
-# STL(Standar Template Library)
+### STL(Standar Template Library)
 [ [Top ] ](#top) [ [ Template ] ](#template)</a>
 
 A library of class and function templates.  
 1. Containers  
-* Generic "off-the-shlf" class templates for storing collection of data  
+* Generic "off-the-shelf" class templates for storing collection of data  
 2. Alogorithms  
 * Generic "off-the-shelf function templates for operating on containers"  
 3. Iterators  
@@ -518,9 +519,11 @@ Kind of Container | STL Containers
 -Fast of item insertion and deletion at the: end
 
 To use vector container
+
 	#include <vector>
 
 Consructors
+
 	vector<T>     		//empty vector
 	vector<t> v1(100)	//100 elemetns of type T
 						//values: T() - default constructor
@@ -537,7 +540,52 @@ Expression | Description
  v.reverse() | increase v's capacity
  v.resize() | change size of vector contents (if csize is greater than capacity then capacity is increased and new position filled using deault constructor, or value given by parameter)
 
- 
+When *vector v* becomes full  
+-capacity incresed automatically, doubled  
+Algorith to increase capacity of *vecor<T>*  
+-Allocate new dynamic array with new size to store vector's elements  
+-Use T copy constructor to copy existing elements to new array. 
+-Store the new in new array  
+-Destroy old array in vector<T>  
+-Make new array the vector<T>'s storage array  
+
+###### Operations example  
+Assignment
+
+	v1 = v2
+![Vector =](./images/STL_vector1.png)
+
+Swapping
+
+	v1.swap(v2)
+![Vector swap](.images/STL_vector2.png)
+
+	==
+implies elemet by element equality
+
+	<
+behaves like string comparison (less than)
+
+###### Operations: Accessors
+
+Expression | Description
+ --- | ---
+ vecList.at(index) | Returns the elements at the position specified by *index*.  
+ vecList[index] | Return the element at the position specified by *index*.  
+ vecList.front() | Returns the first element. (Does not check wether the container is empty)  
+ vecList.back() | Returns the last element. (Does not check wether the container is empty)  
+ vecList.clear() | Delets all of the elements from the container  
+ vecList.erase(position) | Deletes the element at the position specified by *position*
+ vecList.erase(beg, end) | Deletes all of the elements ataring at *beg* until *end-1*  
+ vecList.insert(position, elem) | A copy of *elem* is inserted at the position specified by *position*. The position of the new element is returned.
+ vecList.insert(position, n, elem) | *n* copies of *elem* are inseted at the position specified by *position*
+ vecList.insert(position, beg end) | A copy of the elements, starting at *beg* until *end-1* is inserted into *vecList* at the position specified by *position*
+ vecList.push_back(elem) | A copy of *elem* is inserted into *vecList* at the end
+ vecList.pop_back() | Deletes the last element
+ vecist.resize(num) | Changes the number of elements to *num*. If *size()* increases, the default constructor creates the new elements.
+ vecList.resize(num, elem) | Changes the number of elements to *num*. If *size()* increases, the new elements are copies of *elem*.
+
+
 
 <a name="exceptions">
 
