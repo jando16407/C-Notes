@@ -29,7 +29,7 @@
 
 ### [Exceptions](#exceptions)
 * [Exception Class](#exception-class)
-* [Custom Exceptions](#)
+* [Custom Exceptions](#custom_exceptions)
 
 ### [Class](#class)
 * [Class Arrays](#class_array)
@@ -354,7 +354,7 @@ Two types
 
 </a>
 
-<a name = "exceptions">
+<a name="exceptions">
 
 # Exceptions
 [ [ Top ] ](#top)
@@ -450,7 +450,7 @@ std::underflow_error | This is thrown if a mathematical underflow occurs
     }
 
 Output  
-	An exception occured. Exception Nr. 20
+		An exception occured. Exception Nr. 20
 
 </a>
 
