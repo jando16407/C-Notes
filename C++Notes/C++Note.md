@@ -30,7 +30,7 @@
 ### [Exceptions](#exceptions)
 * [Exception Class](#exception_class)
 
-### [Class](#class)
+### [Class]
 * [Class Arrays](#class_array)
 * [Class Vector](#class_vector)
 * [Constructor](#constructor)
