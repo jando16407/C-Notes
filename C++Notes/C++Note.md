@@ -1,7 +1,9 @@
 <a name="top"></a>
 # C++ Notes
 
-### C Basics
+### C 
+* [Do's](#dos)
+* [Don'ts](#donts)
 * [Function](#function)
 * [Pointer](#pointer)
 * [Switch Statement](#switch_statement)
@@ -51,6 +53,23 @@
 # C Basics
 
 ### ------------------------------------------------------------
+
+<a name="dos">
+
+# Do's
+[ [ Top ] ](#top)</a>
+
+
+<a name="donts">
+
+# Don'ts
+[ [ Top ] ](#top)</a>
+
+It is a bad idea to include the line  
+*using namespace std*  
+in a header file.  
+-another programmer who uses the .h file is forced to use *namespace std*
+
 
 <a name="function">
 
@@ -462,6 +481,63 @@ This will generate specific class based on parameter type
 	};					    of elemetns in the list
 
 
+<a name="stl">
+
+# STL(Standar Template Library)
+[ [Top ] ](#top) [ [ Template ] ](#template)</a>
+
+A library of class and function templates.  
+1. Containers  
+* Generic "off-the-shlf" class templates for storing collection of data  
+2. Alogorithms  
+* Generic "off-the-shelf function templates for operating on containers"  
+3. Iterators  
+* Generalized "smart" pointers tha allow algorithms to operate on almost any container  
+
+STL's 10 containers
+
+Kind of Container | STL Containers
+ --- | ---
+ Sequenial: | deque, list, vector
+ Associative: | map, multimap, multiset, set
+ Adapters: | priority_queue, queue, stack
+ Non-STL: | bitset, valarray, string
+
+ ##### Sequence Containers  
+
+* Every object has a specific position
+* Sequence container *vector* is logically same as arrays and processed like arrays
+* All contianers use same name for common operations and have specific operations
+
+##### *vector*
+
+-*vector* container is logivally same as arrays and processed like arrays  
+-Stores, manages objects in a dynamic array  
+-Elements accessed randomly  
+-Time-consuming because of item insertion and deletion: middl, beginning  
+-Fast of item insertion and deletion at the: end
+
+To use vector container
+	#include <vector>
+
+Consructors
+	vector<T>     		//empty vector
+	vector<t> v1(100)	//100 elemetns of type T
+						//values: T() - default constructor
+	vector<T> v2(100, val)	//100 copies of val
+	vector<T> v3(fptr, lptr) //contains copies of elements in memory location fptr and lptr
+
+vector Operations
+
+Expression | Description
+ --- | ---
+ vecCont.capacity() | Returns the maximum number of elemtns that can be inserted into the container vecCount without reallocation
+ vecCont.empty() | Returns *true* if the container vecCont is empty, *false* otherwise
+ vecCont.size() | Returns the number of elements currently in the container vecCont
+ v.reverse() | increase v's capacity
+ v.resize() | change size of vector contents (if csize is greater than capacity then capacity is increased and new position filled using deault constructor, or value given by parameter)
+
+ 
 
 <a name="exceptions">
 
