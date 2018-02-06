@@ -27,7 +27,7 @@
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
 
-### [Exception](#except)
+### [Exception](#exceptions)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
 
@@ -354,7 +354,7 @@ Two types
 
 </a>
 
-<a name="except">
+<a name="exceptions">
 
 # Exceptions
 [ [ Top ] ](#top)</a>
