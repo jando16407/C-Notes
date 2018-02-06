@@ -353,10 +353,11 @@ Two types
 
 </a>
 
-<a name="exceptions">
+<a name = "exceptions">
 
-## Exceptions
+# Exceptions
 [ [ Top ] ](#top)
+</a>
 
 * [Exception Class](#exception-class)
 
@@ -412,11 +413,10 @@ Exception handlers are declared with the keyword *catch*, which must be placed i
 
 	An exception occured. Exception Nr. 20
 
-</a>
 
 <a name="exception-class">
 
-## Exception Class
+### Exception Class
 [ [ Top ] ](#top)
 
 The *exception* class
