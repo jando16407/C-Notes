@@ -458,7 +458,7 @@ Output
 <a name="exception-class">
 
 ### Exception Class
-[ [ Top ] ](#top)
+[ [ Top ] ](#top) [ [ Exception ] ](#exceptions)
 
 The *exception* class
 -Defined in
@@ -472,7 +472,7 @@ The *exception* class
 <a name="custom_exceptions">
 
 ### Custom Exceptions
-[ [ Top ] ](#top)
+[ [ Top ] ](#top) [ [ Exception ] ](#exceptions)
 
 You can define your own exceptions by inheriting and overriding *exception* class functionality.
 
