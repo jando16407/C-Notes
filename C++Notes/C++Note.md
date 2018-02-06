@@ -17,8 +17,6 @@
 
 ### Basic Elements
 * [Auto Pointers](#auto_pointers)
-* [Exceptions](#exceptions)
-* [Exception Class](#exception_class)
 * [Namespace](#namespace)
 * [Scope](#scope)
 * [Stream](#stream)
@@ -28,6 +26,9 @@
 * [Using](#using)
 * [Vector](#vector)
 * [Linked Lists](#linked_lists)
+
+### [Exceptions](#exceptions)
+* [Exception Class](#exception_class)
 
 ### Class
 * [Class](#classs)
@@ -45,7 +46,9 @@
 ### ------------------------------------------------------------
 
 <a name="function">
+
 ## Function
+
 [ [ Top ] ](#top)
 
 ### Deafult arguments
@@ -351,12 +354,12 @@ Two types
 
 </a>
 
-### ------------------------------------------------------------
-
 <a name="exceptions">
 
 ## Exceptions
 [ [ Top ] ](#top)
+
+* [Exception Class](#exception_class)
 
 
 
