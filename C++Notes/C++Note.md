@@ -45,7 +45,7 @@
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
-* [Ternary operation](#ternary)
+* [Ternary operator](#ternary)
 
 ### [Class](#class)
 * [Class Arrays](#class_array)
