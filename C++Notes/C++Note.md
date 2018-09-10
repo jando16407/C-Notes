@@ -37,7 +37,10 @@
 * [Class template](#class_template)
 * [STL(Standar Template Library)](#stl)
 
-### [Iterators](#iterators)
+### [Iterator](#iterator_ln)  
+
+* [Iterator](#iterator_basic)  
+
 
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
@@ -588,19 +591,52 @@ Expression | Description
  vecList.resize(num, elem) | Changes the number of elements to *num*. If *size()* increases, the new elements are copies of *elem*.
 
 
-<a name="iterators">
 
 # Iterators
-[ [ Top ] ](#top)</a>
-
+[ [ Top ] ](#top)  
+<a name="iterator_ln"></a>  
+<a name="iterator_basic"></a>  
 An iterator. abstracts the process of scanning through a collection of elements.  
 A container is an abstract data structure that supports element access through iterators.  
--begin(): returns an iterator to the fist elements  
--end(): return an iterator to an imaginary position just after the last element  
+
+	-begin(): returns an iterator to the fist elements  
+    
+	-end(): return an iterator to an imaginary position just after the last element  
 An iterator behaves liek a pointer to an element  
--p*: returns the element referenced by this iterator  
--+++p: advances to the next element  
+
+	-p*: returns the element referenced by this iterator  
+    
+	-+++p: advances to the next element  
 Extends the concept of position by dding a traveral capability
+
+#### Array-based and Linked list-based iterators.  
+
+	C.assign(p, q);  
+	-replace C withcontents referenced by the iterator range [p, q](from p up to, but not including, q).
+    insert(p, e);
+    -insert e prior to position p.
+    erase(p);
+    -remove element at position p.
+    erase(p, q);
+    -remove elemenets in the iterator range [p, q)
+
+* Declaring an Iterator to a Vector Container  
+
+	vector<int>::iterator intVecIter;
+
+
+
+#### Various calsses of iterator  
+
+* standard iterator:  
+Allows read-write access to elements supports ++.  
+* const iterator:  
+provides read-only access to elements.  
+* bidirectional iterator:  
+suports both ++p and --p.  
+* random-access iterator:  
+supports both p+i and p-i for integers i.  
+
 
 <a name="exceptions">
 
@@ -1087,6 +1123,9 @@ Representing classes
 	OR
 	vector<type> vec(num, val);
 	*vec* starts with *num* values equal to *val*
+    OR
+    vector<Type> vec(fptr, lptr);
+    *vec* contains copies of elements in memory locations fptr to lptr
 
 #### Adding elements
 
@@ -1097,7 +1136,15 @@ Representing classes
 	vec.pop_back();
 
 #### Clear
+
 	vec.clear();
+
+Deletes all of the elements from the container.  
+
+	vec.erase(position);
+    vec.erase(beg, end);  
+
+Deletes the element at the position specified by *position*, or elements starting at *beg* until *end*-1.
 
 #### Accessing elements
 	vec[0] or vec.at(0);
@@ -1115,6 +1162,44 @@ Representing classes
 	//put things in vec
 	for (int i : vec)
 		cout << i << endl;
+
+#### Global modifications  
+
+	v.reserve()
+
+Increase v's capacity.  
+
+	v.resize()
+
+Change size of vector contents  
+if size is greater than capacity  
+* capacity is increased  
+* * new positions filled using default constructor, or value given by parameter.  
+
+#### Methods  
+
+	vec.capacity();  
+
+Returns the maximum number of elements that can be inserted into the container *vec* without reallocation.  
+
+	vec.empty()  
+
+Returns true if the container *vec* is empty, false otherwise.  
+
+	vec.front();  
+
+Reurns the first element. (Does not check whether the container is empty.)  
+
+	vec.back();  
+
+Returns the last element. (DOes not check whether the container is empty.)  
+
+### Two dimensional vector  
+
+	vector<vector<int> > T(vector<int>(6), 5);  
+
+Declaring a two-dimensional vector T of integers having 5 rows and 6 columns.  
+
 
 </a>
 
