@@ -39,12 +39,13 @@
 
 ### [Iterator](#iterator_ln)  
 
-* [Iterator](#iterator_basic)  
+* [Iterator](#iterator_basic)
 
 
 ### [Exception](#exceptions)
 * [Exception Class](#exception-class)
 * [Custom Exceptions](#custom_exceptions)
+* [Ternary operation](#ternary)
 
 ### [Class](#class)
 * [Class Arrays](#class_array)
@@ -1210,7 +1211,7 @@ Declaring a two-dimensional vector T of integers having 5 rows and 6 columns.
 ## Linked Lists
 [ [ Top ] ](#top)
 
-Linked list is a collectioj of components which are called "nodes".
+Linked list is a collection of components which are called "nodes".
 
 Every node contains address of the next node and last node contains address to nullptr.
 
@@ -1226,6 +1227,34 @@ Every node contains address of the next node and last node contains address to n
 
 </a>
 
+<a name="ternary">  
+
+## Ternary operator  
+[ [ Top ] ](#top)  
+
+Ternary operator is one of conditional operator and is ery useful conditionla expression.  
+Basic Syntax is:  
+
+	(condition) ? (if_true) : (if_false)
+
+which is the same as  
+
+	if (condition)
+		if_true;
+	else
+		if_false;
+
+So it's really a good way to reduce lines of code.
+
+EX) To find largest number of two  
+
+	largest = ((a > b) ? a : b);
+ 
+It will return a if it's larger, return b if b is larger as it's false result of the condition. 
+Also ternary operator is an expression wheres the if structure is a statement. So a ternary operator expression's result can be assigned to a variable -- the result of an if statement cannot.  
+This is a huge advantage.  
+
+</a>  
 
 <a name="class">
 
